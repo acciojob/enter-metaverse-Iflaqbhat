@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<p id="status">Entered Meteverse</p>
-	
-    <script type="text/javascript" src="./script.js">
-		let elem=document.getElementById("status")
-		elem.innerHTML="<h1>Entered Metaverse</h1>"
-</script>
+    <p id="status">Entered Metaverse</p>
+    <button id="enterbtn">Enter</button>
+
+    <script type="text/javascript">
+        // Select the status paragraph and button elements
+        let elem = document.getElementById("status");
+        let button = document.getElementById("enterbtn");
+        button.addEventListener("click", function() {
+            elem.innerHTML = "<h1>Entered Metaverse</h1>";
+        });
+    </script>
 
 </body>
 
 </html>
+
